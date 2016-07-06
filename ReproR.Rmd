@@ -1,7 +1,7 @@
 ---
 title: "Reproducible research with R"
 author: "Laura Graham"
-date: "5 July 2016"
+date: "BES Macroecology, Oxford"
 output: ioslides_presentation
 ---
 
@@ -50,7 +50,6 @@ knitr::opts_chunk$set(echo = TRUE)
 - [tidyr](https://blog.rstudio.org/2014/07/22/introducing-tidyr/): `gather()`, `separate()`, `spread()`
 - [plyr](http://seananderson.ca/2013/12/01/plyr.html): split-apply-combine, `ldply()`
 - [dplyr](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html): `group_by()`, `filter()`, `summarise()`, `mutate()`, `arrange()` 
-- [Swirl](http://swirlstats.com/) provides tutorials for tidyr and dplyr directly in the R console
 
 ## Messy output
 ```{r lin_mod}
@@ -74,7 +73,7 @@ glance(lmfit)
 
 ## Plotting
 
-- [ggplot](http://www.cookbook-r.com/Graphs/) is designed to work with tidy data formats
+- [ggplot2](http://www.cookbook-r.com/Graphs/) is designed to work with tidy data formats
 
 ```{r ggplot_example, message=FALSE, fig.height=2.5}
 library(ggplot2)
@@ -91,5 +90,14 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
 - Contains R code chunks
 - Dynamic log of analysis
 - Reasonably simple syntax (and lots of online resources)
+
+## Additional Resources
+
+- [RStudio cheatsheets](https://www.rstudio.com/resources/cheatsheets/): includes ggplot2, RMarkdown, dplyr, tidyr and more
+- [Swirl](http://swirlstats.com/) provides tutorials for tidyr, dplyr and much more directly in the R console
+- [Python pandas comparison with R](http://pandas.pydata.org/pandas-docs/stable/comparison_with_r.html)
+- [Software Carpentry lessons](http://software-carpentry.org/lessons/)
+- [Reproducible Research on Coursera](https://www.coursera.org/learn/reproducible-research): taught by Roger Peng, Jeff Leek and Brian Caffo at Johns Hopkins University
+- These slides: [https://github.com/laurajanegraham/BES-Macroecology-2016](https://github.com/laurajanegraham/BES-Macroecology-2016)
 
 
